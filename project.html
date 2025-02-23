@@ -7,8 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="slider.css"> <!-- Link to slider CSS -->
+		<script src="slider.js"></script> <!-- Link to slider JS -->
 	</head>
 	<body class="is-preload">
+
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -48,7 +51,7 @@
 								</a></h2>
                                     <span class="date">March 2023</span>
                                 </header>
-								<a href="#" class="image fit"><img src="images/quora.jpeg"   class="center"  alt="" /></a>
+								<a href="#" class="imagesize"><img src="images/quora.jpeg"   class="imagesize"  alt="" /></a>
                                 <p> <li align="justify">Developed a natural language processing model that achieved a 90% accuracy rate on predicting whether two questions have the same 
 									meaning by training Word2Vec embeddings and a Long Short-Term Memory (LSTM) model on a dataset of 400,000 Quora question pairs.</li>
                                     <li align="justify">Conducted extensive exploratory data analysis on the Quora question pairs dataset, utilizing various data visualization techniques to 
@@ -74,7 +77,7 @@
 									</a></h2>
                                     <span class="date">July 2021- May 2021</span>
                                 </header>
-                                <a href="#" class="image fit"><img src="images/Dummy_project_img.jpeg"  class="center" alt="" /></a>
+                                <a href="#" class="imagesize"><img  class="imagesize" class = "zoom-img" src="images/Dummy_project_img.jpeg" alt="" /></a>
                                 <p> <li align="justify">Integrated an ETL Reddit Pipeline leveraging Apache Airflow, Docker, and Python for seamless data extraction, transformation and loading into AWS S3 storage, empowering users to extract valuable insights effortlessly and expediently.</li>
                                     
 									</p>
@@ -82,7 +85,7 @@
                             </article>
 
 							
-							<article >
+							<article class="article">
                                 <header>
                                     <h2><a>Pandalan Law,<br />
                                     Benzatine Infotech
@@ -93,8 +96,47 @@
 								</a></h2>
                                     <span class="date">January 2022 - May 2022</span>
                                 </header>
-								<a href="#" class="image fit"><img src="images/Dummy_project_img.jpeg" alt="" height="350" /></a>
-                                <p> <li align="justify">Utilized Flutter's Bloc architecture for seamless state management, ensuring organized codebase and efficient user experience. This pattern facilitated clear separation of concerns and enhanced scalability.
+
+
+								<div class="Container">					
+								<div class="slider">
+									<div class="slides">
+									<div class="slide">
+										<img src="images/pandalan/1.png" alt="Image 1">
+									</div>
+									<div class="slide">
+										<img src="images/pandalan/2.png" alt="Image 2">									
+									</div>
+									<div class="slide">
+										<img src="images/pandalan/3.png" alt="Image 3">
+									</div>
+									<div class="slide">
+										<img src="images/pandalan/4.png" alt="Image 3">
+									</div>
+									<div class="slide">
+										<img src="images/pandalan/5.png" alt="Image 3">
+									</div>
+									<div class="slide">
+										<img src="images/pandalan/6.png" alt="Image 3">
+									</div>
+									<div class="slide">
+										<img src="images/pandalan/7.png" alt="Image 3">
+									</div>
+									</div>
+									<div class="arrow2" onclick="nextSlide()">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+									<div class="arrow" onclick="prevSlide()">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div> 
+								</div>
+							
+								<p> <li align="justify">Utilized Flutter's Bloc architecture for seamless state management, ensuring organized codebase and efficient user experience. This pattern facilitated clear separation of concerns and enhanced scalability.
 									<li align="justify">Demonstrated cross-platform expertise by implementing Pandalan Law using Flutter and Dart. The app provides a consistent and engaging experience across 
 										various platforms, showcasing proficiency in cross-platform development.</li>
                                     <li align="justify">Integrated diverse features into Pandalan Law, such as group settings, chat options, and tailored practices. Leveraged libraries like dio for HTTP requests, 
@@ -156,8 +198,35 @@
                                    
                        
                             </article>
-                        
-                            
+
+		
+						
+				
+
+							<div class="slider">
+								<div class="slides">
+								<div class="slide">
+									<img src="images/Dummy_project_img.jpeg" alt="Image 1">
+								</div>
+								<div class="slide">
+									<img src="images/Dummy_project_img.jpeg" alt="Image 2">
+								</div>
+								<div class="slide">
+									<img src="images/Dummy_project_img.jpeg" alt="Image 3">
+								</div>
+								</div>
+								<div class="arrow2" onclick="nextSlide()">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<div class="arrow" onclick="prevSlide()">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+
                         </section>
 
                     
@@ -172,6 +241,8 @@
 				</div>
 
 			</div>
+
+		
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

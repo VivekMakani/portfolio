@@ -1,0 +1,122 @@
+.Container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%;
+ /* Ensure the container takes full width */
+  }
+
+  .imagesize {
+    width: 100%; /* Full width of the container */
+    height: 390px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .imagesize:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+
+
+.slider {
+width: 80%;
+height: 500px;
+align-self: right;
+margin: 0 0%; /* 20% margin on both sides */
+position: relative;
+overflow: hidden;
+}
+
+.slides {
+display: flex;
+transition: transform 0.5s ease-in-out;
+height: 500px;
+}
+
+.slide {
+min-width: 100%;
+box-sizing: border-box;
+}
+
+.slide img {
+max-width: 100%; /* Ensure the image does not exceed the slide width */
+max-height: 100%; /* Ensure the image does not exceed the slide height */
+object-fit: contain;
+}
+
+.arrow {
+position: absolute;
+top: 90%;
+left: 70%;
+transform: translate(-50%, -50%);
+transform: rotate(90deg);
+cursor: pointer;
+}
+
+.arrow2 {
+position: absolute;
+top: 90%;
+left: 90%;
+transform: translate(-50%, -50%);
+transform: rotate(270deg);
+cursor: pointer;
+
+}
+
+.arrow2 span {
+display: block;
+width: 1.5vw;
+height: 1.5vw;
+border-bottom: 5px solid black;
+border-right: 5px solid black;
+transform: rotate(45deg);
+margin: -10px;
+animation: animate 2s infinite;
+}
+
+.arrow2 span:nth-child(2) {
+animation-delay: -0.2s;
+}
+
+.arrow2 span:nth-child(3) {
+animation-delay: -0.4s;
+}
+
+.arrow span {
+display: block;
+width: 1.5vw;
+height: 1.5vw;
+border-bottom: 5px solid black;
+border-right: 5px solid black;
+transform: rotate(45deg);
+margin: -10px;
+animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+animation-delay: -0.4s;
+}
+
+
+
+
+
+@keyframes animate {
+0% {
+opacity: 0;
+transform: rotate(45deg) translate(-20px, -20px);
+}
+50% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+transform: rotate(45deg) translate(20px, 20px);
+}
+}
