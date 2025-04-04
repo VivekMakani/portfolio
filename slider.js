@@ -23,8 +23,8 @@ function Slider(sliderId) {
   // Event listeners for buttons
   document.addEventListener("DOMContentLoaded", function () {
     // Next and previous arrow buttons
-    const nextButton = document.querySelector(`#${sliderId} .arrow2`);
-    const prevButton = document.querySelector(`#${sliderId} .arrow`);
+    const nextButton = document.querySelector(`#${sliderId} .arrow-container.right`);
+    const prevButton = document.querySelector(`#${sliderId} .arrow-container.left`);
 
     // Adding event listeners to the arrows
     nextButton.addEventListener('click', nextSlide);
